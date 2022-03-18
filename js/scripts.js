@@ -1,3 +1,27 @@
+function sendForm(form){
+    var sendTo = "marcosviniciocardoso123@gmail.com"
+    var requestBody = {
+        "to" : sendTo,
+        "subject": "Projeto Sistemas Distribuidos - Contato",
+        "content" : 
+        "Nome: " + form.name + 
+        "\n" + "Email: " + form.email + 
+        "\n" + "Telefone: " + form.phone + 
+        "\n" + "Mensagem: " + form.message
+    }
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", "http://localhost:8080/api/v1/send-mail");
+    xhr.setRequestHeader("Accept", "application/json");
+    xhr.setRequestHeader("Content-Type", "application/json");
+    xhr.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            alert("Mensagem enviada com sucesso!");
+        }
+    }
+    xhr.send(JSON.stringify(requestBody));
+
+}
+
 window.addEventListener('DOMContentLoaded', event => {
 
     // Navbar shrink function
