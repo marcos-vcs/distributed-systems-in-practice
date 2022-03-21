@@ -1,27 +1,31 @@
-# EmailSending
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.2.
+## Contact form using sendgrid
 
-## Development server
+#### To access the deployment **[`CLICK HERE`](http://sistemas-distribuidos-sd.herokuapp.com/api/v1/)**
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+---
+### Technologies used in development
+ - Spring boot
+ - sendgrid API 
+ - Javascript
+ - Jquery 3.5.1
+ - Bootstrap 5.1.3
+ - CSS3
+ - HTML5
+ ---
+### Motivation
+Project developed aiming at a practical academic study related to the subject of distributed systems, aiming to implement the main concepts of the theme.
 
-## Code scaffolding
+---
+### Operation
+To have the project running on localhost it is necessary to have a valid API sendgrid key and a JDK version 11 or compatible.
+Having these resources, add the key in the provider (SendGridProvider class) and activate the spring boot application's tomcat.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+---
+#### Questions or suggestions?
+Feel free to open a new issue.
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+----
+ **Thanks for visiting this repository!:sparkling_heart:**
+ 
+If you liked it, please leave a star.:star2:
